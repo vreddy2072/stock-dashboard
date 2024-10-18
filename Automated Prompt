@@ -1,0 +1,46 @@
+Project Overview: Create a web application using React with Next.js for the front end and FastAPI for the back end. The application should allow users to log in using their Google accounts and display a stock dashboard with three tables, including a portfolio table and two tables for top stocks.
+
+1. Design Flow:
+
+User Flow:
+Users access the login page and log in with their Google identity.
+Upon successful login, users are redirected to the stock dashboard.
+Tech Stack:
+Front End: React, Next.js, Tailwind CSS, Lucide React, Shadcn.
+Back End: FastAPI, SQLAlchemy, SQLite for the database.
+
+2. Directory Structure:
+
+Front End (stock-dashboard):
+stock-dashboard/ ├── .next/ ├── app/ │ ├── dashboard/ │ │ ├── dashboard.tsx │ │ └── page.tsx │ ├── login/ │ │ ├── LoginButton.tsx │ │ └── page.tsx │ └── components/ │ └── ui/ ├── public/ ├── styles/ ├── package.json └── tsconfig.json
+
+Back End (stock-api):
+stock-api/ ├── cache/ ├── dao/ ├── dataaccess/ ├── database/ │ ├── database.py │ └── tables_creation.py ├── pydantic_model/ │ ├── forms.py ├── services/ │ ├── portfolio_service.py │ ├── stock_service.py ├── .env ├── main.py ├── requirements.txt
+
+3. Features:
+
+Login Page:
+
+Implement Google OAuth for authentication.
+After logging in, redirect to the stock dashboard.
+Stock Dashboard:
+
+Portfolio Table: Occupies 60% of the screen, displaying the user's stock portfolio with the following columns:
+Symbol
+Purchase Price
+Current Price
+Quantity
+Purchase Date
+Gains/Loss
+Top 5 Stocks with Highest Increase: Displayed in the 40% of screen at the same level of portfolio dashboard.
+Top 5 Stocks with Highest Decrease: Displayed below the previous table in the 40% of the screen.
+Use Tailwind CSS for styling, ensuring a responsive design.
+
+4. Implementation:
+
+Backend:
+Create FastAPI endpoints for handling authentication, portfolio retrieval, and stock data fetching. Create python implementation and share the code for all layers starting API, Pydantic, Service, Data Access, Model. x
+Frontend:
+Use React components to build the login button, dashboard layout, and tables.
+Manage state using React hooks to handle data fetching and user input. Share code for all the web pages.
+Setup Instructions - Provide step-by-step instructions for setting up the project, including installing dependencies for both Front end and Back End separately.
