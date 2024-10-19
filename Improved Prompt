@@ -1,6 +1,7 @@
 Create a user interface application using Next.js and React. Use TypeScript for type safety.
 Features:
 	1. Create landing page for user to login using Google account. 
+	2. Create Stock Dashboard page that shows user's portfolio and top 5 stocks with gains and losses.
 Requirements:
 	• My Operating System is Windows 11
 	• I am using Visual Studio Code IDE to implement the project
