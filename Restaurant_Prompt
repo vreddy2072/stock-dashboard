@@ -1,0 +1,15 @@
+Create a website for a restaurant with following features:
+1. Provides standard features with menu that includes appetizers, main entrees, deserts and drinks
+2. Supports shopping cart features for Carry Out
+3. Allows on line users to give feedback on menu items, that our system can capture and use for analytics and to provide insights to the user when choosing the menu items. The feedback should include rating the menu item on 5 stars, and give feedback for each menu item
+4. Allow user to provide overall feedback.
+5. Any other features you can suggest
+6. Tech Stack for Front End:
+  • Main Tech Stack: Next.js: 13.4.12, React: 18.2.0, TypeScript: 5.1.6
+	• Use Tailwind CSS (version 3.3.2) for styling.
+	• Use shadcn (version latest) components for UI elements.
+	• Use lucide-react (version 0.244.0) for icons.
+7. Tech Stack for API Layer: FastAPI
+8. Services Layer: Plain Python services using Pydantic models
+9. Data Access Layer: SQLAlchemy for ORM
+10. Database: SQLite
