@@ -1,0 +1,4 @@
+Create user interface application using React Software with following features:
+1. Create landing page for user to login using Google account. 
+2. Create Stock Dashboard page that shows user's portfolio and top 5 stocks with gains and losses.
+In order to run this page in Visual Studio Code, provide the steps involved, for example to install software and any configuration required. I already have nvm, node.js and react software installed.
