@@ -1,0 +1,26 @@
+Use VS Code IDE
+Create top folder 'applications'
+Create Next.js application under 'applications' folder
+  	1. Create a new Next.js project:
+  	Open your terminal in Visual Studio Code and run:
+  		a. npx create-next-app@latest stock-dashboard
+  		b. When prompted, click enter for all prompts
+  	2. Navigate to your project directory:
+  		a. cd stock-dashboard
+  	3. Install additional dependencies:
+  		a. npm install @radix-ui/react-checkbox @radix-ui/react-label lucide-react
+  	4. Install shadcn/ui CLI: (add all the controls)
+  		a. npx shadcn@latest init
+  		b. npx shadcn@latest add
+  	5. If you get error 'Cannot find module 'tailwindcss-animate''
+      npm install tailwindcss-animate@1.0.6
+Copy folders from 'stock-dashboard' to the new application created
+Copy 'stock-api' under applications
+Google Authentication - open '.env' file
+    1. Generate SECRET_KEY - open 'gen-key.py' and execute to generate key. Set SECRET_KEY in .env file.
+    2. Create keys GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET from https://console.cloud.google.com/. Navigate to APIs & Services --> Credentials --> CREATE CREDENTIALS --> OAuth Client ID --> Select 'Web Application' from drop down. Enter name 'stock-dashboard' with Authorized redirect URIs pointing to URL 'http://localhost:8000/auth'. Copy 'Client ID' and 'Client secret' to .env file.
+Start Back End 'stock-api' application
+    cd stock-api; $env:PYTHONPATH = "stock-api"; uvicorn main:app --reload
+Start Frond End 'stock-dashboard' application
+    cd stock-dashboard; npm run dev
+Start web browser and enter URL  http://localhost:3000
